@@ -1,0 +1,137 @@
+@import url(bootstrap.min.css);
+@font-face {
+    font-family: "Josifin-medium";
+    src: url(../fonts/Josefin_Sans/static/JosefinSans-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Josifin-bold";
+    src: url(../fonts/Josefin_Sans/static/JosefinSans-Bold.ttf);
+}
+@font-face {
+    font-family: "poppins-normal";
+    src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+
+:root{
+    --btn-color:#ff5600;
+    --main-boldfont:"josifin-bold";
+    --main-mediumfont:"josifin-medium";
+    --main-letter:"ppopins-normal";
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+img {
+  width: 100%;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+li {
+  list-style: none;
+}
+
+
+
+.Header{
+    background-color: rgba(0, 153, 204, 0.192);
+    padding: 3px;
+}
+
+.logo-img{
+    width:100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.Header .navbar span{
+    font-size: 30px;
+    font-family: "josifin-medium";
+    font-weight:normal;
+    margin-left: 30px;
+    
+}
+
+.Header .navbar .navbar-nav .nav-item .nav-link {
+    font-size: 20px;
+    font-family: "poppins-normal";
+    
+}
+
+.Header .navbar .navbar-nav .btn1{
+    margin-left: 60px;
+    padding: 10px 20px;
+    border-radius: 12px;
+    background-color: gray;
+    border: 1px solid transparent;
+    color: white;
+    font-family: var(--main-letter);
+    cursor: pointer;
+    font-size: 20px;
+    position: relative;
+     z-index: 1;
+     
+
+}
+
+.Header .btn1::after {
+  content: "";
+  width: 0;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  visibility: hidden;
+  background-color: #ff5600;
+  border-radius: 12px;
+  opacity: 0;
+  transition: all 0.5s cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+
+.btn1:hover:after {
+  width: 100%;
+  visibility: visible;
+  opacity: 1;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navlink-sibling{
+font-size: 16px;
+    font-family: var(--main-letter);
+}
+
