@@ -1,38 +1,37 @@
 @import url(bootstrap.min.css);
 @font-face {
-    font-family: "Josifin-medium";
-    src: url(../fonts/Josefin_Sans/static/JosefinSans-Medium.ttf);
+  font-family: "Josifin-medium";
+  src: url(../fonts/Josefin_Sans/static/JosefinSans-Medium.ttf);
 }
 
 @font-face {
-    font-family: "Josifin-bold";
-    src: url(../fonts/Josefin_Sans/static/JosefinSans-Bold.ttf);
+  font-family: "Josifin-bold";
+  src: url(../fonts/Josefin_Sans/static/JosefinSans-Bold.ttf);
 }
 @font-face {
-    font-family: "poppins-normal";
-    src: url(../fonts/Poppins/Poppins-Regular.ttf);
+  font-family: "poppins-normal";
+  src: url(../fonts/Poppins/Poppins-Regular.ttf);
 }
 
-:root{
-    --btn-color:#ff5600;
-    --main-boldfont:"josifin-bold";
-    --main-mediumfont:"josifin-medium";
-    --main-letter:"ppopins-normal";
+:root {
+  --btn-color: #ff5600;
+  --main-boldfont: "josifin-bold";
+  --main-mediumfont: "josifin-medium";
+  --main-letter: "ppopins-normal";
 }
-h2{
+h2 {
   font-family: "outfit-bold";
   font-weight: 400;
   font-size: 30px;
   color: #13293d;
 }
 
-p{
+p {
   font-size: 20px;
   font-family: "outfit-medium";
   margin-top: 15px;
   color: #00305c;
 }
-
 
 * {
   margin: 0;
@@ -63,16 +62,13 @@ a {
   color: #ff5600;
   font-family: var(--main-letter);
   font-size: 1.2rem;
-
 }
 
 li {
   list-style: none;
 }
 
-
-
-.Header{
+.Header {
   padding: 3px;
   position: absolute;
   top: 0;
@@ -81,45 +77,43 @@ li {
   z-index: 1;
 }
 
-.logo-img{
-    width:100px;
-    height: 100px;
-    border-radius: 50%;
+.logo-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
 }
 
-.Header .navbar span{
-    font-size: 30px;
-    font-family: "josifin-medium";
-    font-weight:normal;
-    margin-left: 30px;
-    
+.Header .navbar span {
+  font-size: 30px;
+  font-family: "josifin-medium";
+  font-weight: normal;
+  margin-left: 30px;
+  color: whitesmoke;
 }
 
 .Header .navbar .navbar-nav .nav-item .nav-link {
-    font-size: 20px;
-    font-family: "poppins-normal";
-    
+  font-size: 20px;
+  font-family: "poppins-normal";
+  color: whitesmoke;
 }
 
-.navlink-sibling{
-font-size: 16px;
-    font-family: var(--main-letter);
+.navlink-sibling {
+  font-size: 16px;
+  font-family: var(--main-letter);
 }
 
-.Header .navbar .navbar-nav .btn1{
-    margin-left: 60px;
-    padding: 10px 20px;
-    border-radius: 12px;
-    background-color: transparent;
-    border: 1px solid gray;
-    color: #333;
-    font-family: var(--main-letter);
-    cursor: pointer;
-    font-size: 20px;
-    position: relative;
-     z-index: 1;
-     
-
+.Header .navbar .navbar-nav .btn1 {
+  margin-left: 60px;
+  padding: 10px 20px;
+  border-radius: 12px;
+  background-color: transparent;
+  border: 1px solid gray;
+  color: whitesmoke;
+  font-family: var(--main-letter);
+  cursor: pointer;
+  font-size: 20px;
+  position: relative;
+  z-index: 1;
 }
 
 .Header .btn1::after {
@@ -140,29 +134,24 @@ font-size: 16px;
   width: 100%;
   visibility: visible;
   opacity: 1;
-
 }
 
 /*General btn class */
-.btn{
-
+.btn {
   margin-left: 60px;
-    padding: 10px 20px;
-    border-radius: 12px;
-    background-color: gray;
-    border: 1px solid transparent;
-    color: white;
-    font-family: var(--main-letter);
-    cursor: pointer;
-    font-size: 20px;
-    position: relative;
-     z-index: 1;
-
+  padding: 10px 20px;
+  border-radius: 12px;
+  background-color: gray;
+  border: 1px solid transparent;
+  color: white;
+  font-family: var(--main-letter);
+  cursor: pointer;
+  font-size: 20px;
+  position: relative;
+  z-index: 1;
 }
 
-
 .Hero {
-  background-image: url(../img/Hero.jpg);
   height: 650px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -173,29 +162,28 @@ font-size: 16px;
   flex-wrap: nowrap;
   position: relative;
   padding: 120px 0;
+  background: linear-gradient(to right, #8e54e9, #4776e6);
 }
 
 .Hero .Section_caption {
   text-align: left;
   margin-top: 30px;
-
 }
 
 .Hero .Section_caption h1 {
   font-size: 50px;
-  color: chocolate;
+  color: whitesmoke;
   width: 100%;
   font-family: var(--main-boldfont);
   line-height: 1.5;
   margin-top: 60px;
-} 
-
+}
 
 .Hero .rev_span {
   margin-left: 60px;
   font-size: 16px;
   font-family: var(--main-mediumfont);
-  color: darkgoldenrod;
+  color: whitesmoke;
 }
 
 .Hero .search {
@@ -210,13 +198,9 @@ font-size: 16px;
   gap: 30px;
 }
 
-
-
-
 .Hero .btn1 {
   background-color: transparent;
   border: none;
-
 }
 .Hero .form-control {
   border: none;
@@ -234,7 +218,7 @@ font-size: 16px;
   border-radius: 20px;
   margin-top: 30px;
   position: relative;
-     z-index: 1;
+  z-index: 1;
 }
 
 .Hero .Enroll .btn::after {
@@ -245,7 +229,7 @@ font-size: 16px;
   inset: 0;
   z-index: -1;
   visibility: hidden;
-  background-color: #ff5600;
+  background-color: #ff5500;
   border-radius: 20px;
   opacity: 0;
   transition: all 0.5s cubic-bezier(0.5, 1.6, 0.4, 0.7);
@@ -255,7 +239,6 @@ font-size: 16px;
   width: 100%;
   visibility: visible;
   opacity: 1;
-
 }
 
 /* section 2 */
@@ -272,68 +255,124 @@ font-size: 16px;
 .ourCourses .section-heading {
   text-align: center;
   margin-bottom: 3rem;
-  text-align: center;
 }
- 
-.ourCourses .card{
-  
-width: 100%;
-background-color: #fff;
-border-radius: 0.4rem;
-border: 1px solid gray;
-overflow: hidden;
+
+.ourCourses .card {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 0.4rem;
+  border: 1px solid gray;
+  overflow: hidden;
 }
-.ourCourses .card-body{
+.ourCourses .card-body {
   padding: 1rem 1.5rem;
 }
 
-.ourCourses .education-title h4 a{
+.ourCourses .education-title h4 a {
   font-size: 18px;
   font-family: var(--main-letter);
   margin-bottom: 0.5rem;
   color: #13293d;
 }
-.ourCourses .education-title a:hover{
+.ourCourses .education-title a:hover {
   color: #ff5600;
 }
 
-
-
-.ourCourses .card-body .courses-info ul{
+.ourCourses .card-body .courses-info ul {
   padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 1rem;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 1rem;
 }
-.ourCourses .card-body .courses-info ul li{
-font-size: 15px;
-font-family: var(--main-letter);
-display: flex;
-align-items: center;
-justify-content: flex-start;
-column-gap: 5px;
- flex: 0 50%;
- width: 50%;
-row-gap: 0.8rem;
-
-
+.ourCourses .card-body .courses-info ul li {
+  font-size: 15px;
+  font-family: var(--main-letter);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 5px;
+  flex: 0 50%;
+  width: 50%;
+  row-gap: 0.8rem;
 }
-  
 
+/* Discover Section */
 
+.Discover {
+  background-color: whitesmoke;
+  padding: 70px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 
+.Discover .section-heading {
+  text-align: center;
+  margin-bottom: 3rem;
+}
 
+.Discover .card {
+  height: 200px;
+  width: 200px;
 
+  overflow: hidden;
+  background-color: #fff;
+  color: #13293d;
+}
 
+.Discover .card h4 {
+  font-family: var(--main-mediumfont);
+}
 
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+  color: red;
+}
 
+/*why section*/
 
+.why {
+  background-color: whitesmoke;
+  padding: 70px 0;
+}
 
+.benefitoflearning h2 {
+  font-family: var(--main-mediumfont);
+  font-size: 40px;
+  color: #5d86ad;
+}
 
+.benefitoflearning .p1 {
+  color: #00305c !important;
+  line-height: 1.8;
+  margin: 0 0 10px;
+}
+.sp {
+  font-family: var(--main-letter);
+  font-size: 16px;
+}
 
+.why .btn::after {
+  content: "";
+  width: 0;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  visibility: hidden;
+  background-color: #ff5600;
+  border-radius: 12px;
+  opacity: 0;
+  transition: all 0.5s cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
 
-
-
-
-
+.why .btn:hover:after {
+  width: 100%;
+  visibility: visible;
+  opacity: 1;
+}
