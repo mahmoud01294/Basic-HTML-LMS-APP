@@ -19,7 +19,19 @@
     --main-mediumfont:"josifin-medium";
     --main-letter:"ppopins-normal";
 }
+h2{
+  font-family: "outfit-bold";
+  font-weight: 400;
+  font-size: 30px;
+  color: #13293d;
+}
 
+p{
+  font-size: 20px;
+  font-family: "outfit-medium";
+  margin-top: 15px;
+  color: #00305c;
+}
 
 
 * {
@@ -48,6 +60,10 @@ img {
 a {
   text-decoration: none;
   display: inline-block;
+  color: #ff5600;
+  font-family: var(--main-letter);
+  font-size: 1.2rem;
+
 }
 
 li {
@@ -57,8 +73,12 @@ li {
 
 
 .Header{
-    background-color: rgba(0, 153, 204, 0.192);
-    padding: 3px;
+  padding: 3px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .logo-img{
@@ -81,13 +101,18 @@ li {
     
 }
 
+.navlink-sibling{
+font-size: 16px;
+    font-family: var(--main-letter);
+}
+
 .Header .navbar .navbar-nav .btn1{
     margin-left: 60px;
     padding: 10px 20px;
     border-radius: 12px;
-    background-color: gray;
-    border: 1px solid transparent;
-    color: white;
+    background-color: transparent;
+    border: 1px solid gray;
+    color: #333;
     font-family: var(--main-letter);
     cursor: pointer;
     font-size: 20px;
@@ -118,20 +143,197 @@ li {
 
 }
 
+/*General btn class */
+.btn{
 
-
-
-
-
-
-
-
-
-
-
-
-.navlink-sibling{
-font-size: 16px;
+  margin-left: 60px;
+    padding: 10px 20px;
+    border-radius: 12px;
+    background-color: gray;
+    border: 1px solid transparent;
+    color: white;
     font-family: var(--main-letter);
+    cursor: pointer;
+    font-size: 20px;
+    position: relative;
+     z-index: 1;
+
 }
+
+
+.Hero {
+  background-image: url(../img/Hero.jpg);
+  height: 650px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  position: relative;
+  padding: 120px 0;
+}
+
+.Hero .Section_caption {
+  text-align: left;
+  margin-top: 30px;
+
+}
+
+.Hero .Section_caption h1 {
+  font-size: 50px;
+  color: chocolate;
+  width: 100%;
+  font-family: var(--main-boldfont);
+  line-height: 1.5;
+  margin-top: 60px;
+} 
+
+
+.Hero .rev_span {
+  margin-left: 60px;
+  font-size: 16px;
+  font-family: var(--main-mediumfont);
+  color: darkgoldenrod;
+}
+
+.Hero .search {
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: white;
+  border-radius: 30px;
+  gap: 30px;
+}
+
+
+
+
+.Hero .btn1 {
+  background-color: transparent;
+  border: none;
+
+}
+.Hero .form-control {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  font-size: 18px;
+  width: 400px;
+}
+.Hero .Enroll {
+  margin-top: 30px;
+}
+.Hero .Enroll .btn {
+  padding: 10px 30px;
+  background-color: rgba(0, 153, 204, 0.397);
+  border-radius: 20px;
+  margin-top: 30px;
+  position: relative;
+     z-index: 1;
+}
+
+.Hero .Enroll .btn::after {
+  content: "";
+  width: 0;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  visibility: hidden;
+  background-color: #ff5600;
+  border-radius: 20px;
+  opacity: 0;
+  transition: all 0.5s cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+
+.Hero .Enroll .btn:hover:after {
+  width: 100%;
+  visibility: visible;
+  opacity: 1;
+
+}
+
+/* section 2 */
+
+.ourCourses {
+  padding: 70px 0;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ourCourses .section-heading {
+  text-align: center;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+ 
+.ourCourses .card{
+  
+width: 100%;
+background-color: #fff;
+border-radius: 0.4rem;
+border: 1px solid gray;
+overflow: hidden;
+}
+.ourCourses .card-body{
+  padding: 1rem 1.5rem;
+}
+
+.ourCourses .education-title h4 a{
+  font-size: 18px;
+  font-family: var(--main-letter);
+  margin-bottom: 0.5rem;
+  color: #13293d;
+}
+.ourCourses .education-title a:hover{
+  color: #ff5600;
+}
+
+
+
+.ourCourses .card-body .courses-info ul{
+  padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+}
+.ourCourses .card-body .courses-info ul li{
+font-size: 15px;
+font-family: var(--main-letter);
+display: flex;
+align-items: center;
+justify-content: flex-start;
+column-gap: 5px;
+ flex: 0 50%;
+ width: 50%;
+row-gap: 0.8rem;
+
+
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

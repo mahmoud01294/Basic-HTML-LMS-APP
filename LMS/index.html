@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="keywords" content="">
-    <link rel="shortcut icon" href="img/online.png" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="" />
+    <link rel="shortcut icon" href="img/online.png" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <meta name="description" content="Learning management system">
+    <meta name="description" content="Learning management system" />
     <script type="module" src="js/bootstrap.bundle.min.js" defer></script>
     <script src="js/main.js" defer></script>
     <link
@@ -16,17 +16,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-
-     <div class="Header" id="Header">
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header class="Header" id="Header">
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
             <img class="logo-img" src="img/logo.jpg" alt="logo" />
           </a>
-          <span >Ta3alM</span>
+          <span>Ta3alM</span>
           <button
             class="navbar-toggler"
             type="button"
@@ -39,26 +38,24 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav m-auto" >
+            <ul class="navbar-nav m-auto">
               <li class="nav-item mx-3">
-                <a class="nav-link active" aria-current="page" href="index.html">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="index.html"
+                >
                   Home
                 </a>
               </li>
               <li class="nav-item mx-3">
-                <a class="nav-link" href="courses.html">
-                  Courses
-                </a>
+                <a class="nav-link" href="courses.html"> Courses </a>
               </li>
               <li class="nav-item mx-3">
-                <a class="nav-link" href="about.html">
-                  About
-                </a>
+                <a class="nav-link" href="about.html"> About </a>
               </li>
               <li class="nav-item mx-3">
-                <a class="nav-link" href="contact.html">
-                  Contact
-                </a>
+                <a class="nav-link" href="contact.html"> Contact </a>
               </li>
 
               <li class="nav-item dropdown mx-3">
@@ -72,28 +69,1429 @@
                   Accounts
                 </a>
                 <div class="dropdown-menu" aria-labelledby="x">
-                  <a href="instructor.html" class="dropdown-item navlink-sibling">
+                  <a
+                    href="instructor.html"
+                    class="dropdown-item navlink-sibling"
+                  >
                     Instructor Dash Board
                   </a>
-                  <a href="student.html" class="dropdown-item navlink-sibling" >
+                  <a href="student.html" class="dropdown-item navlink-sibling">
                     Student Dash Board
                   </a>
                 </div>
               </li>
-              <a  class="btn1"  href="#">Sign in</a>
+              <a class="btn1" href="#">Sign in</a>
             </ul>
-            
           </div>
         </div>
       </nav>
-    </div>
+    </header>
 
+    <section class="Hero">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="Section_caption">
+              <div class="review_caption">
+                <div class="d-flex align-items-center gap-4 fs-5 lh-0 mb-4">
+                  <div class="text-dark fw-semibold">4.9</div>
+                  <div class="review_star">
+                    <i class="fa-solid fa-star" style="color: gold"></i>
+                    <i class="fa-solid fa-star" style="color: gold"></i>
+                    <i class="fa-solid fa-star" style="color: gold"></i>
+                    <i class="fa-solid fa-star" style="color: gold"></i>
+                    <i class="fa-solid fa-star" style="color: gold"></i>
+                  </div>
+                </div>
+                <span class="rev_span">Engaged Student</span>
+              </div>
 
+              <h1>Your Learning Journey Starts Here</h1>
+            </div>
+            <div class="search">
+              <button class="btn1" id="search-btn">
+                <i
+                  data-feather="search"
+                  style="stroke: gray; width: 30px; height: 30px"
+                ></i>
+              </button>
+              <input
+                class="form-control"
+                type="text"
+                name="search-input"
+                id="search-input"
+                placeholder="Search for courses, skills, and videos"
+              />
 
+              <button type="button" class="btn1 me-2" id="send-btn">
+                <i
+                  data-feather="send"
+                  style="stroke: gold; width: 30px; height: 30px"
+                ></i>
+              </button>
+            </div>
+            <div class="d-block mt2">
+              <div
+                class="d-flex align-items-center justify-content-start gap-3"
+              >
+                <div class="Enroll">
+                  <a
+                    class="btn"
+                    href="index.html"
+                    id="Enroll-btn"
+                    role="button"
+                  >
+                    Enrolled Today Now
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="hero-image">
+              <img class="" src="img/hero-img.png" alt="hero-image" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section class="ourCourses">
+      <ht class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-md-8 col-sm-12">
+            <div class="section-heading">
+              <h2>Explore Our Courses</h2>
+              <p>
+                Learn from Industry Experts and Advance Your Career with
+                Practical Skills
+              </p>
+            </div>
+          </div>
+        </div>
+        <body class="row justify-content-center">
+          <div class="col-xl-12 col-lg-12 col-12">
+            <ul
+              class="nav nav-tabs simple smalls scroll-tab align-items-center justify-content-center border-0 mb-4"
+              id="courseTab"
+              role="tablist"
+            >
+              <li class="nav-item ms-0" role="presentation">
+                <a
+                  class="nav-link active"
+                  id="pills-development-tab"
+                  data-bs-toggle="pill"
+                  role="tab"
+                  aria-controls="pills-development"
+                  aria-selected="true"
+                  href="/#pills-development"
+                  data-discover="true"
+                >
+                  Development
+                </a>
+              </li>
 
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link"
+                  id="pills-design-tab"
+                  data-bs-toggle="pill"
+                  role="tab"
+                  aria-controls="pills-design"
+                  aria-selected="false"
+                  href="/#pills-design"
+                  data-discover="true"
+                  tabindex="-1"
+                >
+                  Design
+                </a>
+              </li>
+
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link"
+                  id="pills-marketing-tab"
+                  data-bs-toggle="pill"
+                  role="tab"
+                  aria-controls="pills-marketing"
+                  aria-selected="false"
+                  href="/#pills-marketing"
+                  data-discover="true"
+                  tabindex="-1"
+                >
+                  Marketing
+                </a>
+              </li>
+
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link"
+                  id="pills-business-tab"
+                  data-bs-toggle="pill"
+                  role="tab"
+                  aria-controls="pills-business"
+                  aria-selected="false"
+                  href="/#pills-business"
+                  data-discover="true"
+                  tabindex="-1"
+                >
+                  Business
+                </a>
+              </li>
+
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link"
+                  id="pills-accounting-tab"
+                  data-bs-toggle="pill"
+                  role="tab"
+                  aria-controls="pills-accounting"
+                  aria-selected="false"
+                  href="/#pills-accounting"
+                  data-discover="true"
+                  tabindex="-1"
+                >
+                  Accounting
+                </a>
+              </li>
+            </ul>
+          </div>
+          <section class="col-xl-12 col-lg-12 col-12">
+            <div class="tab-content" id="courseTabContent">
+              <div
+                class="tab-pane fade active show"
+                id="pills-development"
+                role="tabpanel"
+                aria-labelledby="pills-development-tab"
+                tabindex="0"
+              >
+                <div class="row justify-content-center g-3">
+                  <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="mt-4 card">
+                      <div class="card_img">
+                        <img src="img/courses-1.jpg" alt="img1" />
+                      </div>
+                      <div class="card-body">
+                        <div class="education-title">
+                          <h4>
+                            <a href="#" data-discover="true">
+                              Backend Development with Node.js: Building Web
+                              Apps
+                            </a>
+                          </h4>
+                        </div>
+                        <div class="courses-info">
+                          <ul>
+                            <li>
+                              <i
+                                data-feather="camera"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              31 Lectures
+                            </li>
+                            <li>
+                              <i
+                                data-feather="bar-chart"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              Beginner
+                            </li>
+                            <li>
+                              <i
+                                data-feather="dollar-sign"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              155
+                            </li>
+                            <li>
+                              <i
+                                data-feather="star"
+                                style="stroke: gold; width: 18px; height: 18px"
+                              ></i>
+                              4.9 (1.57k)
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="enrol_link mt-3">
+                          <a href="index.html" data-discover="true">
+                            Enrolled Now
+                            <i
+                              data-feather="arrow-right"
+                              style="stroke: gold; width: 24px; height: 24px"
+                            ></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="mt-4 card">
+                      <div class="card-img">
+                        <img src="img/courses-2.jpg" alt="img2" />
+                      </div>
+                      <div class="card-body">
+                        <div class="education-title">
+                          <h4>
+                            <a href="#" data-discover="true">
+                              HTML Mastery: Complete Guide to HTML from Basics
+                              to Advanced
+                            </a>
+                          </h4>
+                        </div>
+                        <div class="courses-info">
+                          <ul>
+                            <li class="{style.li}">
+                              <i
+                                data-feather="camera"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              32 Lectures
+                            </li>
+                            <li>
+                              <i
+                                data-feather="bar-chart"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              Advance
+                            </li>
+                            <li>
+                              <i
+                                data-feather="dollar-sign"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              149
+                            </li>
+                            <li>
+                              <i
+                                data-feather="star"
+                                style="stroke: gold; width: 18px; height: 18px"
+                              ></i>
+                              4.9 (2.22k)
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="enrol_link mt-3">
+                          <a href="index.html" data-discover="true">
+                            Enrolled Now
+                            <i
+                              data-feather="arrow-right"
+                              style="stroke: gold; width: 24px; height: 24px"
+                            ></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="mt-4 card">
+                      <div class="card-img">
+                        <img src="img/courses-3.jpg" alt="img3" />
+                      </div>
+                      <div class="card-body">
+                        <div class="education-title">
+                          <h4>
+                            <a href="#" data-discover="true">
+                              Python Unleashed: Mastering JavaScript for Web
+                              Development
+                            </a>
+                          </h4>
+                        </div>
+                        <div class="courses-info">
+                          <ul>
+                            <li>
+                              <i
+                                data-feather="camera"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              45 Lectures
+                            </li>
+                            <li>
+                              <i
+                                data-feather="bar-chart"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              Advance
+                            </li>
+                            <li>
+                              <i
+                                data-feather="dollar-sign"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              179
+                            </li>
+                            <li>
+                              <i
+                                data-feather="star"
+                                style="stroke: gold; width: 18px; height: 18px"
+                              ></i>
+                              4.9 (1.34k)
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="enrol_link mt-3">
+                          <a href="index.html" data-discover="true">
+                            Enrolled Now
+                            <i
+                              data-feather="arrow-right"
+                              style="stroke: gold; width: 24px; height: 24px"
+                            ></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="mt-4 card">
+                      <div class="card-img">
+                        <img src="img/courses-4.jpg" alt="img4" />
+                      </div>
+                      <div class="card-body">
+                        <div class="education-title">
+                          <h4>
+                            <a href="#" data-discover="true">
+                              Advanced WordPress Techniques: Dive Deep into
+                              Styling and Layout
+                            </a>
+                          </h4>
+                        </div>
+                        <div class="courses-info">
+                          <ul>
+                            <li>
+                              <i
+                                data-feather="camera"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              65 Lectures
+                            </li>
+                            <li>
+                              <i
+                                data-feather="bar-chart"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              Beginner
+                            </li>
+                            <li>
+                              <i
+                                data-feather="dollar-sign"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              199
+                            </li>
+                            <li>
+                              <i
+                                data-feather="star"
+                                style="stroke: gold; width: 18px; height: 18px"
+                              ></i>
+                              4.9 (4.36k)
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="enrol_link mt-3">
+                          <a href="index.html" data-discover="true">
+                            Enrolled Now
+                            <i
+                              data-feather="arrow-right"
+                              style="stroke: gold; width: 24px; height: 24px"
+                            ></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="tab-pane fade"
+                id="pills-design"
+                role="tabpanel"
+                aria-labelledby="pills-design-tab"
+                tabindex="0"
+              >
+                <div class="row justify-content-center g-3">
+                  <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="mt-4 card">
+                      <div class="card-img">
+                        <img src="img/courses-4.jpg" alt="img4" />
+                      </div>
+                      <div class="card-body">
+                        <div class="education-title">
+                          <h4>
+                            <a href="#" data-discover="true">
+                              Advanced WordPress Techniques: Dive Deep into
+                              Styling and Layout
+                            </a>
+                          </h4>
+                        </div>
+                        <div class="courses-info">
+                          <ul>
+                            <li>
+                              <i
+                                data-feather="camera"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              65 Lectures
+                            </li>
+                            <li>
+                              <i
+                                data-feather="bar-char"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              Beginner
+                            </li>
+                            <li>
+                              <i
+                                data-feather="dollar-sign"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              199
+                            </li>
+                            <li>
+                              <i
+                                data-feather="star"
+                                style="stroke: gold; width: 18px; height: 18px"
+                              ></i>
+                              4.8 (4.36k)
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="enrol_link mt-3">
+                          <a href="index.html" data-discover="true">
+                            Enrolled Now
+                            <i
+                              data-feather="arrow-right"
+                              style="stroke: gold; width: 24px; height: 24px"
+                            ></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="mt-4 card">
+                      <div class="card-img">
+                        <img src="img/courses-1.jpg" alt="img1" />
+                      </div>
+                      <div class="card-body">
+                        <div class="education-title">
+                          <h4>
+                            <a href="#" data-discover="true">
+                              Advanced WordPress Techniques: Dive Deep into
+                              Styling and Layout
+                            </a>
+                          </h4>
+                        </div>
+                        <div class="courses-info">
+                          <ul>
+                            <li>
+                              <i
+                                data-feather="camera"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              65 Lectures
+                            </li>
+                            <li>
+                              <i
+                                data-feather="bar-char"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              Beginner
+                            </li>
+                            <li>
+                              <i
+                                data-feather="dollar-sign"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              199
+                            </li>
+                            <li>
+                              <i
+                                data-feather="star"
+                                style="stroke: gold; width: 18px; height: 18px"
+                              ></i>
+                              4.8 (4.36k)
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="enrol_link mt-3">
+                          <a href="index.html" data-discover="true">
+                            Enrolled Now
+                            <i
+                              data-feather="arrow-right"
+                              style="stroke: gold; width: 24px; height: 24px"
+                            ></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="mt-4 card">
+                      <div class="card-img">
+                        <img src="img/courses-5.jpg" alt="img5" />
+                      </div>
+                      <div class="card-body">
+                        <div class="education-title">
+                          <h4>
+                            <a href="#" data-discover="true">
+                              Backend Development with Node.js: Building Web
+                              Apps
+                            </a>
+                          </h4>
+                        </div>
+                        <div class="courses-info">
+                          <ul>
+                            <li>
+                              <i
+                                data-feather="camera"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              31 Lectures
+                            </li>
+                            <li>
+                              <i
+                                data-feather="bar-char"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              Beginner
+                            </li>
+                            <li>
+                              <i
+                                data-feather="dollar-sign"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              155
+                            </li>
+                            <li>
+                              <i
+                                data-feather="star"
+                                style="stroke: gold; width: 18px; height: 18px"
+                              ></i>
+                              4.9 (3.45k)
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="enrol_link mt-3">
+                          <a href="index.html" data-discover="true">
+                            Enrolled Now
+                            <i
+                              data-feather="arrow-right"
+                              style="stroke: gold; width: 24px; height: 24px"
+                            ></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="mt-4 card">
+                      <div class="card-img">
+                        <img src="img/courses-6.jpg" alt="img6" />
+                      </div>
+                      <div class="card-body">
+                        <div class="education-title">
+                          <h4>
+                            <a href="#" data-discover="true">
+                              UX/UI Design Essentials: Designing User-Centered
+                              Interfaces
+                            </a>
+                          </h4>
+                        </div>
+                        <div class="courses-info">
+                          <ul>
+                            <li>
+                              <i
+                                data-feather="camera"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              22 Lectures
+                            </li>
+                            <li>
+                              <i
+                                data-feather="bar-char"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              Beginner
+                            </li>
+                            <li>
+                              <i
+                                data-feather="dollar-sign"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              129
+                            </li>
+                            <li>
+                              <i
+                                data-feather="star"
+                                style="stroke: gold; width: 18px; height: 18px"
+                              ></i>
+                              4.9 (2.45k)
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="enrol_link mt-3">
+                          <a href="index.html" data-discover="true">
+                            Enrolled Now
+                            <i
+                              data-feather="arrow-right"
+                              style="stroke: gold; width: 24px; height: 24px"
+                            ></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="tab-pane fade"
+                id="pills-marketing"
+                role="tabpanel"
+                aria-labelledby="pills-marketing-tab"
+                tabindex="0"
+              >
+                <div class="row justify-content-center g-3">
+                  <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="mt-4 card">
+                      <div class="card-img">
+                        <img src="img/courses-5.jpg" alt="img5 " />
+                      </div>
+                      <div class="card-body">
+                        <div class="education-title">
+                          <h4>
+                            <a href="#" data-discover="true">
+                              Backend Development with Node.js: Building Web
+                              Apps
+                            </a>
+                          </h4>
+                        </div>
+                        <div class="courses-info">
+                          <ul>
+                            <li>
+                              <i
+                                data-feather="camera"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              31 Lectures
+                            </li>
+                            <li>
+                              <i
+                                data-feather="bar-chart"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              Beginner
+                            </li>
+                            <li>
+                              <i
+                                data-feather="dollar-sign"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              155
+                            </li>
+                            <li>
+                              <i
+                                data-feather="star"
+                                style="stroke: gold; width: 18px; height: 18px"
+                              ></i>
+                              4.9 (3.45k)
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="enrol_link mt-3">
+                          <a href="index.html" data-discover="true">
+                            Enrolled Now
+                            <i
+                              data-feather="arrow-right"
+                              style="stroke: gold; width: 24px; height: 24px"
+                            ></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="mt-4 card">
+                      <div class="card-img">
+                        <img src="img/courses-6.jpg" alt="img6" />
+                      </div>
+                      <div class="card-body">
+                        <div class="education-title">
+                          <h4>
+                            <a href="#" data-discover="true">
+                              UX/UI Design Essentials: Designing User-Centered
+                              Interfaces
+                            </a>
+                          </h4>
+                        </div>
+                        <div class="courses-info">
+                          <ul>
+                            <li>
+                              <i
+                                data-feather="camera"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              22 Lectures
+                            </li>
+                            <li>
+                              <i
+                                data-feather="bar-chart"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              Beginner
+                            </li>
+                            <li>
+                              <i
+                                data-feather="dollar-sign"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              129
+                            </li>
+                            <li>
+                              <i
+                                data-feather="star"
+                                style="stroke: gold; width: 18px; height: 18px"
+                              ></i>
+                              4.9 (2.45k)
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="enrol_link mt-3">
+                          <a href="index.html" data-discover="true">
+                            Enrolled Now
+                            <i
+                              data-feather="arrow-right"
+                              style="stroke: gold; width: 24px; height: 24px"
+                            ></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="mt-4 card">
+                      <div class="card-img">
+                        <img src="img/courses-7.jpg" alt="img7" />
+                      </div>
+                      <div class="card-body">
+                        <div class="education-title">
+                          <h4>
+                            <a href="#" data-discover="true">
+                              Backend Development with Node.js: Building Web
+                              Apps
+                            </a>
+                          </h4>
+                        </div>
+                        <div class="courses-info">
+                          <ul>
+                            <li>
+                              <i
+                                data-feather="camera"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              39 Lectures
+                            </li>
+                            <li>
+                              <i
+                                data-feather="bar-chart"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              Advance
+                            </li>
+                            <li>
+                              <i
+                                data-feather="dollar-sign"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                            </li>
+                            <li>
+                              <i
+                                data-feather="star"
+                                style="stroke: gold; width: 18px; height: 18px"
+                              ></i>
+                              4.9 (2.22k)
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="enrol_link mt-3">
+                          <a href="index.html" data-discover="true">
+                            Enrolled Now
+                            <i
+                              data-feather="arrow-right"
+                              style="stroke: gold; width: 24px; height: 24px"
+                            ></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="mt-4 card">
+                      <div class="card_img">
+                        <img class="img" src="img/courses-8.jpg" alt="img8" />
+                      </div>
+                      <div class="card-body">
+                        <div class="education-title">
+                          <h4>
+                            <a href="#" data-discover="true">
+                              HTML Mastery: Complete Guide to HTML from Basics
+                              to Advanced
+                            </a>
+                          </h4>
+                        </div>
+                        <div class="courses-info">
+                          <ul>
+                            <li>
+                              <i
+                                data-feather="camera"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              32 Lectures
+                            </li>
+                            <li>
+                              <i
+                                data-feather="bar-chart"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              Beginner
+                            </li>
+                            <li>
+                              <i
+                                data-feather="dollar-sign"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              149
+                            </li>
+                            <li>
+                              <i
+                                data-feather="star"
+                                style="stroke: gold; width: 18px; height: 18px"
+                              ></i>
+                              4.9 (4.45k)
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="enrol_link mt-3">
+                          <a href="index.html" data-discover="true">
+                            Enrolled Now
+                            <i
+                              data-feather="arrow-right"
+                              style="stroke: gold; width: 24px; height: 24px"
+                            ></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="tab-pane fade"
+                id="pills-business"
+                role="tabpanel"
+                aria-labelledby="pills-business-tab"
+                tabindex="0"
+              >
+                <div class="row justify-content-center g-3">
+                  <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="mt-4 card">
+                      <div class="card-img">
+                        <img class="img" src="img/courses-7.jpg" alt="img7" />
+                      </div>
+                      <div class="card-body">
+                        <div class="education-title">
+                          <h4>
+                            <a href="#" data-discover="true">
+                              Backend Development with Node.js: Building Web
+                              Apps
+                            </a>
+                          </h4>
+                        </div>
+                        <div class="courses-info">
+                          <ul>
+                            <li>
+                              <i
+                                data-feather="camera"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              39 Lectures
+                            </li>
+
+                            <li>
+                              <i
+                                data-feather="bar-chart"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              Advance
+                            </li>
+                            <li>
+                              <i
+                                data-feather="dollar-sign"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              129
+                            </li>
+                            <li>
+                              <i
+                                data-feather="star"
+                                style="stroke: gold; width: 18px; height: 18px"
+                              ></i>
+                              4.9 (2.22k)
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="enrol_link mt-3">
+                          <a href="index.html" data-discover="true">
+                            Enrolled Now
+                            <i
+                              data-feather="arrow-right"
+                              style="stroke: gold; width: 24px; height: 24px"
+                            ></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="mt-4 card">
+                      <div class="card-img">
+                        <img class="img" src="img/courses-8.jpg" alt="img8" />
+                      </div>
+                      <div class="card-body">
+                        <div class="education-title">
+                          <h4>
+                            <a href="#" data-discover="true">
+                              HTML Mastery: Complete Guide to HTML from Basics
+                              to Advanced
+                            </a>
+                          </h4>
+                        </div>
+                        <div class="courses-info">
+                          <ul>
+                            <li>
+                              <i
+                                data-feather="camera"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              32 Lectures
+                            </li>
+                            <li>
+                              <i
+                                data-feather="bar-chart"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              Beginner
+                            </li>
+                            <li>
+                              <i
+                                data-feather="dollar-sign"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              149
+                            </li>
+                            <li>
+                              <i
+                                data-feather="star"
+                                style="stroke: gold; width: 18px; height: 18px"
+                              ></i>
+                              4.9 (4.45k)
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="enrol_link mt-3">
+                          <a href="index.html" data-discover="true">
+                            Enrolled Now
+                            <i
+                              data-feather="arrow-right"
+                              style="stroke: gold; width: 24px; height: 24px"
+                            ></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="mt-4 card">
+                      <div class="card-img">
+                        <img class="img" src="img/courses-5.jpg" alt="img5" />
+                      </div>
+                      <div class="card-body">
+                        <div class="education-title">
+                          <h4>
+                            <a href="#" data-discover="true">
+                              Web Development Bootcamp: Learn to Build Modern
+                              Websites
+                            </a>
+                          </h4>
+                        </div>
+                        <div class="courses-info">
+                          <ul>
+                            <li>
+                              <i
+                                data-feather="camera"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              48 Lectures
+                            </li>
+                            <li>
+                              <i
+                                data-feather="bar-chart"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              Beginner
+                            </li>
+                            <li>
+                              <i
+                                data-feather="dollar-sign"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              199
+                            </li>
+                            <li>
+                              <i
+                                data-feather="star"
+                                style="stroke: gold; width: 18px; height: 18px"
+                              ></i>
+                              4.8 (3.65k)
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="enrol_link mt-3">
+                          <a href="index.html" data-discover="true">
+                            Enrolled Now
+                            <i
+                              data-feather="arrow-right"
+                              style="stroke: gold; width: 24px; height: 24px"
+                            ></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="mt-4 card">
+                      <div class="card-img">
+                        <img src="img/courses-9.jpg" alt="img9" />
+                      </div>
+                      <div class="card-body">
+                        <div class="education-title">
+                          <h4>
+                            <a href="#" data-discover="true">
+                              The Complete AI Guide: Learn ChatGPT, Generative
+                              AI & More..
+                            </a>
+                          </h4>
+                        </div>
+                        <div class="courses-info">
+                          <ul>
+                            <li>
+                              <i
+                                data-feather="camera"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              28 Lectures
+                            </li>
+                            <li>
+                              <i
+                                data-feather="bar-chart"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              Advance
+                            </li>
+                            <li>
+                              <i
+                                data-feather="dollar-sign"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              120
+                            </li>
+                            <li>
+                              <i
+                                data-feather="star"
+                                style="stroke: gold; width: 18px; height: 18px"
+                              ></i>
+                              4.7 (4.36k)
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="enrol_link mt-3">
+                          <a href="index.html" data-discover="true">
+                            Enrolled Now
+                            <i
+                              data-feather="arrow-right"
+                              style="stroke: gold; width: 24px; height: 24px"
+                            ></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="tab-pane fade"
+                id="pills-accounting"
+                role="tabpanel"
+                aria-labelledby="pills-accounting-tab"
+                tabindex="0"
+              >
+                <div class="row justify-content-center g-3">
+                  <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="mt-4 card">
+                      <div class="card-img">
+                        <img src="img/courses-9.jpg" alt="img9" />
+                      </div>
+                      <div class="card-body">
+                        <div class="education-title">
+                          <h4>
+                            <a href="#" data-discover="true">
+                              The Complete AI Guide: Learn ChatGPT, Generative
+                              AI & More..
+                            </a>
+                          </h4>
+                        </div>
+                        <div class="courses-info">
+                          <ul>
+                            <li>
+                              <i
+                                data-feather="camera"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              28 Lectures
+                            </li>
+                            <li>
+                              <i
+                                data-feather="bar-chart-2"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              Advance
+                            </li>
+                            <li>
+                              <i
+                                data-feather="dollar-sign"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              120
+                            </li>
+                            <li>
+                              <i
+                                data-feather="star"
+                                style="stroke: gold; width: 18px; height: 18px"
+                              ></i>
+                              4.7 (4.36k)
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="enrol_link mt-3">
+                          <a href="index.html" data-discover="true">
+                            Enrolled Now
+                            <i
+                              data-feather="arrow-right"
+                              style="stroke: gold; width: 24px; height: 24px"
+                            ></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="mt-4 card">
+                      <div class="card-img">
+                        <img src="img/courses-5.jpg" alt="img5" />
+                      </div>
+                      <div class="card-body">
+                        <div class="education-title">
+                          <h4>
+                            <a href="#" data-discover="true">
+                              Web Development Bootcamp: Learn to Build Modern
+                              Websites
+                            </a>
+                          </h4>
+                        </div>
+                        <div class="courses-info">
+                          <ul>
+                            <li>
+                              <i
+                                data-feather="camera"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              48 Lectures
+                            </li>
+                            <li>
+                              <i
+                                data-feather="bar-chart-2"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              Beginner
+                            </li>
+                            <li>
+                              <i
+                                data-feather="dollar-sign"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              199
+                            </li>
+                            <li>
+                              <i
+                                data-feather="star"
+                                style="stroke: gold; width: 18px; height: 18px"
+                              ></i>
+                              4.8 (3.65k)
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="enrol_link mt-3">
+                          <a href="index.html" data-discover="true">
+                            Enrolled Now
+                            <i
+                              data-feather="arrow-right"
+                              style="stroke: gold; width: 24px; height: 24px"
+                            ></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-4 col-md-6">
+
+                    <div class="mt-4 card">
+                      <div class="card-img">
+                        <img class="img" src="img/courses-5.jpg" alt="img5" />
+                      </div>
+                      <div class="card-body">
+                        <div class="education-title">
+                          <h4>
+                            <a href="#" data-discover="true">
+                              Web Development Bootcamp: Learn to Build Modern
+                              Websites
+                            </a>
+                          </h4>
+                        </div>
+                        <div class="courses-info">
+                          <ul>
+                            <li>
+                              <i
+                                data-feather="camera"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              48 Lectures
+                            </li>
+                            <li>
+                              <i
+                                data-feather="bar-chart"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              Beginner
+                            </li>
+                            <li>
+                              <i
+                                data-feather="dollar-sign"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              199
+                            </li>
+                            <li>
+                              <i
+                                data-feather="star"
+                                style="stroke: gold; width: 18px; height: 18px"
+                              ></i>
+                              4.8 (3.65k)
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="enrol_link mt-3">
+                          <a href="index.html" data-discover="true">
+                            Enrolled Now
+                            <i
+                              data-feather="arrow-right"
+                              style="stroke: gold; width: 24px; height: 24px"
+                            ></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-3 col-lg-4 col-md-6">
+
+                    <div class="mt-4 card">
+                      <div class="card-img">
+                        <img src="img/courses-6.jpg" alt="img6" />
+                      </div>
+                      <div class="card-body">
+                        <div class="education-title">
+                          <h4>
+                            <a href="#" data-discover="true">
+                              UX/UI Design Essentials: Designing User-Centered
+                              Interfaces
+                            </a>
+                          </h4>
+                        </div>
+                        <div class="courses-info">
+                          <ul>
+                            <li>
+                              <i
+                                data-feather="camera"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              22 Lectures
+                            </li>
+                            <li>
+                              <i
+                                data-feather="bar-chart"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              Beginner
+                            </li>
+                            <li>
+                              <i
+                                data-feather="dollar-sign"
+                                style="stroke: gray; width: 18px; height: 18px"
+                              ></i>
+                              129
+                            </li>
+                            <li>
+                              <i
+                                data-feather="star"
+                                style="stroke: gold; width: 18px; height: 18px"
+                              ></i>
+                              4.9 (2.45k)
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="enrol_link mt-3">
+                          <a href="index.html" data-discover="true">
+                            Enrolled Now
+                            <i
+                              data-feather="arrow-right"
+                              style="stroke: gold; width: 24px; height: 24px"
+                            ></i>
+                          </a>
+                    </div>
+                    
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
 
 
     
-</body>
+
+    <!-- ======= Courses Section End ======= -->
+
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+      feather.replace();
+    </script>
+  </body>
 </html>
