@@ -12,6 +12,9 @@
   font-family: "poppins-normal";
   src: url(../fonts/Poppins/Poppins-Regular.ttf);
 }
+img{
+  width: 100%;
+}
 
 :root {
   --btn-color: #ff5600;
@@ -33,23 +36,11 @@ p {
   color: #00305c;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 html {
   font-size: 16px;
 }
 
-img {
-  width: 100%;
-}
-.container {
-  width: 80%;
-  margin: auto;
-}
 
 .row {
   display: flex;
@@ -152,7 +143,7 @@ li {
 }
 
 .Hero {
-  height: 650px;
+  height: 700px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -165,12 +156,17 @@ li {
   background: linear-gradient(to right, #8e54e9, #4776e6);
 }
 
-.Hero .Section_caption {
+.Hero .review-caption{
+margin-top: 80px;
+padding-top: 80px;
+}
+
+.Hero .Section-caption  {
   text-align: left;
   margin-top: 30px;
 }
 
-.Hero .Section_caption h1 {
+.Hero .Section-caption h1 {
   font-size: 50px;
   color: whitesmoke;
   width: 100%;
@@ -184,6 +180,7 @@ li {
   font-size: 16px;
   font-family: var(--main-mediumfont);
   color: whitesmoke;
+  
 }
 
 .Hero .search {
@@ -375,4 +372,27 @@ li {
   width: 100%;
   visibility: visible;
   opacity: 1;
+}
+
+/*insights section*/
+
+.insights{
+  background-color: whitesmoke;
+  padding:80px 0;
+  
+}
+
+.insights .section-heading{
+display:flex ;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+margin-bottom:4rem;
+}
+  
+.insights .card{
+  border-radius:0.4rem;
+  overflow:hidden;
+  background-color:#fff;
+  border:1px solid gray;
 }
