@@ -495,3 +495,195 @@ ul.footer-bottom-social li a{
     font-size: 14px;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Design */
+
+
+@media screen and (max-width: 1024px) {
+  .Header .navbar .navbar-nav .nav-item .nav-link {
+    font-size: 16px;
+  }
+
+  .Hero {
+    height: auto;
+    padding: 80px 0;
+    text-align: center;
+  }
+  .Hero .Section-caption h1 {
+    font-size: 46px;
+  }
+  .Hero .search {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .Hero .form-control {
+    width: 100%;
+  }
+
+}
+
+
+@media screen and (max-width:920px) {
+
+  .Hero {
+    height: auto;
+    padding: 60px 0;
+    text-align: center;
+  }
+  .Hero .Section-caption h1 {
+    font-size: 42px;
+  }
+
+  .Hero .search {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .Hero .form-control {
+    width: 100%;
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .Header .navbar .navbar-nav .nav-item .nav-link {
+    font-size: 16px;
+  }
+
+  .Hero {
+    height: auto;
+    padding: 60px 0;
+    text-align: center;
+  }
+
+  .Hero .Section-caption h1 {
+    font-size: 36px;
+    margin-top: 30px;
+  }
+
+  .Hero .search {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .Hero .form-control {
+    width: 100%;
+  }
+
+  .ourCourses .card-body .courses-info ul li {
+    flex: 0 100%;
+    width: 100%;
+  }
+
+  .Discover .card {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .Header .navbar .navbar-nav .nav-item .nav-link {
+    font-size: 15px;
+  }
+
+  .Hero {
+    height: auto;
+    padding: 50px 0;
+    text-align: center;
+  }
+
+  .Hero .Section-caption h1 {
+    font-size: 32px;
+    margin-top: 25px;
+  }
+
+  .Hero .search {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .Hero .form-control {
+    width: 100%;
+  }
+}
+
+
+
+@media screen and (max-width: 480px) {
+  .Header .navbar .navbar-nav .nav-item .nav-link {
+    font-size: 14px;
+  }
+
+  .Hero {
+    height: auto;
+    padding: 40px 0;
+    text-align: center;
+  }
+
+  .Hero .Section-caption h1 {
+    font-size: 28px;
+    margin-top: 20px;
+  }
+
+  .Hero .search {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .Hero .form-control {
+    width: 100%;
+  }
+}
