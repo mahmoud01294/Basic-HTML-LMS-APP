@@ -66,6 +66,32 @@ li {
   z-index: 1;
 }
 
+.headerFixed{
+    position: fixed;
+    top:-90px;
+    left:0;
+    right:0;
+    background-color: #09c;
+    z-index: 11;
+    transform: translateY(90px);
+    transition: all .5s;
+}
+
+/*special header structure*/
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu > .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-left: 0.1rem;
+  display: none;
+}
+.dropdown-submenu:hover > .dropdown-menu {
+  display: block;
+}
+
+
 .logo-img {
   width: 100px;
   height: 100px;
@@ -476,25 +502,404 @@ li {
 }
 
 ul.footer-bottom-social {
-    margin: 0;
-    padding: 0;
-    display: inline-flex;
-    align-items: center;
-    justify-content: flex-start;
-    column-gap: .8rem;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 0.8rem;
 }
 
-ul.footer-bottom-social li a{
+ul.footer-bottom-social li a {
   width: 30px;
-    height: 30px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(245, 245, 245, 0.11);
-    border-radius: 50%;
-    font-size: 14px;
-
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(245, 245, 245, 0.11);
+  border-radius: 50%;
+  font-size: 14px;
 }
+
+/*back to top button*/
+.btn-up{
+    position: fixed;
+    inset-inline-end: 20px;
+    bottom:20px;
+}
+
+.hide{
+    opacity: 0;
+    visibility: hidden;
+} 
+
+
+/*courses page*/
+
+.page-title {
+  padding: 70px 0;
+  background: linear-gradient(to right, #8e54e9, #4776e6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.page-title .section-caption {
+  text-align: center;
+}
+
+.page-title .section-caption h1 {
+  font-size: 36px;
+  color: whitesmoke;
+  font-family: var(--main-boldfont);
+  margin-top: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -542,7 +947,6 @@ ul.footer-bottom-social li a{
 
 /* Responsive Design */
 
-
 @media screen and (max-width: 1024px) {
   .Header .navbar .navbar-nav .nav-item .nav-link {
     font-size: 16px;
@@ -563,12 +967,9 @@ ul.footer-bottom-social li a{
   .Hero .form-control {
     width: 100%;
   }
-
 }
 
-
-@media screen and (max-width:920px) {
-
+@media screen and (max-width: 920px) {
   .Hero {
     height: auto;
     padding: 60px 0;
@@ -586,16 +987,7 @@ ul.footer-bottom-social li a{
   .Hero .form-control {
     width: 100%;
   }
-  
 }
-
-
-
-
-
-
-
-
 
 @media screen and (max-width: 768px) {
   .Header .navbar .navbar-nav .nav-item .nav-link {
@@ -633,7 +1025,6 @@ ul.footer-bottom-social li a{
   }
 }
 
-
 @media screen and (max-width: 600px) {
   .Header .navbar .navbar-nav .nav-item .nav-link {
     font-size: 15px;
@@ -659,8 +1050,6 @@ ul.footer-bottom-social li a{
     width: 100%;
   }
 }
-
-
 
 @media screen and (max-width: 480px) {
   .Header .navbar .navbar-nav .nav-item .nav-link {

@@ -68,17 +68,56 @@
                 >
                   Accounts
                 </a>
-                <div class="dropdown-menu" aria-labelledby="x">
-                  <a
-                    href="instructor.html"
-                    class="dropdown-item navlink-sibling"
+                <ul class="dropdown-menu" aria-labelledby="x">
+                  <li class="dropdown-submenu">
+                    <a
+                    href="#"
+                    class="dropdown-item  dropdown-toggle navlink-sibling"
                   >
                     Instructor Dash Board
                   </a>
-                  <a href="student.html" class="dropdown-item navlink-sibling">
+                  <ul class="dropdown-menu">
+                  <li>
+                   <a class="dropdown-item" href="instructor.html">
+                      Dashboard
+                     </a>
+                    </li>
+                    <li>
+                    <a class="dropdown-item" href="create-course.html">
+                     Create Course
+                      </a>
+                     </li>
+                     <li>
+                    <a class="dropdown-item" href="my-courses.html">
+                       My Courses
+                       </a>
+                      </li>
+                       </ul>
+
+
+                    </li>
+                    <li class="dropdown-submenu">
+                      <a href="#" class="dropdown-item dropdown-toggle navlink-sibling">
                     Student Dash Board
                   </a>
-                </div>
+                  <ul class="dropdown-menu">
+                    <li>
+                    <a class="dropdown-item" href="student.html">
+                     Dashboard
+                      </a>
+                   </li>
+                    <li>
+                    <a class="dropdown-item" href="all-courses.html">
+                    All Courses
+                    </a>
+                    </li>
+
+                    </ul>
+
+                    </li>
+                  
+                  
+                </ul>
               </li>
               <a class="btn1" role="button" id="sign-btn" href="#">Sign in</a>
             </ul>
@@ -1986,6 +2025,11 @@
         </div>
       </div>
     </footer>
+
+    <button class="btn btn-up hide btn-info" id="backToTop">
+    <i data-feather="arrow-up"
+   style="color:white; width:35px; height:35px;"></i>
+   </button>
 
     <script src="https://unpkg.com/feather-icons"></script>
     <script>
