@@ -347,7 +347,7 @@ li {
   font-family: var(--main-mediumfont);
 }
 
-.card:hover {
+.Discover .card:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transform: translateY(-5px);
   transition: all 0.3s ease;
@@ -535,7 +535,7 @@ ul.footer-bottom-social li a {
 
 
 /*courses page*/
-
+/*maybe general-section*/
 .page-title {
   padding: 70px 0;
   background: linear-gradient(to right, #8e54e9, #4776e6);
@@ -556,6 +556,52 @@ ul.footer-bottom-social li a {
   font-family: var(--main-boldfont);
   margin-top: 80px;
 }
+.page-title .section-caption p{
+  font-size: 20px;
+  color: whitesmoke;
+  font-family: var(--main-mediumfont);
+}
+
+/*create-course page */
+
+.course-form .card{
+  padding: 30px;
+  
+}
+
+.course-form .card .btn{
+  width:15%;
+  padding: 5px;
+  margin-top: 30px;
+  font-size: 18px;
+  
+}
+
+.course-form .btn::after {
+  content: "";
+  width: 0;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  visibility: hidden;
+  background-color: #ff5600;
+  border-radius: 12px;
+  opacity: 0;
+  transition: all 0.5s cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+
+
+.course-form .btn:hover:after {
+  width: 100%;
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+
+
 
 
 
