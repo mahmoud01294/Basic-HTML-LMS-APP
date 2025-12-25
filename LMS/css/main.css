@@ -598,6 +598,33 @@ ul.footer-bottom-social li a {
   opacity: 1;
 }
 
+/*My-courses page*/
+
+.Instructor-table{
+  padding: 70px 0;
+  background-color: whitesmoke;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Instructor-table .section-title{
+text-align: center;
+}
+
+.Instructor-table .section-title h3{
+  font-size: 30px;
+  font-family: var(--main-mediumfont);
+  color:goldenrod;
+}
+
+.action-btn {
+  width: 70px;
+  padding: 4px;
+  font-size: 12px;
+  margin:2px;
+}
+
 
 
 

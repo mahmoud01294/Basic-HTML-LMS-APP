@@ -139,48 +139,93 @@
         <div class="row align-items-center justify-content-center">
           <div class="col-xl-10 col-lg-12">
             <div class="card">
-                <h5>Basic Information</h5>
-                <p>Fill basic information regarding your course.</p>
-                <div class="mb-3 mt-3">
-                  <label for="course-name" class="form-label">Course Name</label>
-                  <input type="text" class="form-control w-50" name="course-name" id="course-name"   placeholder="Enter Course Name">
-                </div>
-               <div class="mb-3">
-                 <label for="course-category" class="form-label">Course Category</label>
-                  <input type="text" class="form-control w-50" id="course-category" name="course-category" placeholder="Enter Course Category">
-               </div>
-                <div class="mb-3">
-                 <label for="course-level" class="form-label">Course Level</label>
-                  <input type="text" class="form-control w-50" id="course-level" name="course-level" placeholder="Enter Course Level">
-               </div>
-               <div class="mb-3">
-                 <label for="Lectuers-Number" class="form-label">Number of Lectures</label>
-                  <input type="number" class="form-control w-25" id="Lectuers-Number" name="Lectuers-Number" placeholder="Number of Lectures" min="0">
-               </div>
+              <h5>Basic Information</h5>
+              <p>Fill basic information regarding your course.</p>
+              <div class="mb-3 mt-3">
+                <label for="courseName" class="form-label">Course Name</label>
+                <input
+                  type="text"
+                  class="form-control w-50"
+                  name="courseName"
+                  id="courseName"
+                  placeholder="Enter Course Name"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="courseCategory" class="form-label"
+                  >Course Category</label
+                >
+                <input
+                  type="text"
+                  class="form-control w-50"
+                  id="courseCategory"
+                  name="courseCategory"
+                  placeholder="Enter Course Category"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="courseLevel" class="form-label">Course Level</label>
+                <input
+                  type="text"
+                  class="form-control w-50"
+                  id="courseLevel"
+                  name="courseLevel"
+                  placeholder="Enter Course Level"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="lectuersNumber" class="form-label"
+                  >Number of Lectures</label
+                >
+                <input
+                  type="number"
+                  class="form-control w-25"
+                  id="lectuersNumber"
+                  name="lectuersNumber"
+                  placeholder="Number of Lectures"
+                  min="0"
+                />
+              </div>
 
-               <div class="mb-3">
-                 <label for="course-price" class="form-label">Course Price</label>
-                  <input type="number" class="form-control w-25" id="course-price" name="course-price" placeholder="Course Price" min="0">
-               </div>
+              <div class="mb-3">
+                <label for="coursePrice" class="form-label">Course Price</label>
+                <input
+                  type="number"
+                  class="form-control w-25"
+                  id="coursePrice"
+                  name="coursePrice"
+                  placeholder="Course Price"
+                  min="0"
+                />
+              </div>
 
-               <div class="mb-3">
-                 <label for="course-image" class="form-label">Course Image</label>
-                  <input type="file" class="form-control w-25" id="course-image" name="course-image" placeholder="Upload Course Image">
-               </div>
-               <div class="mb-3">
-                 <label for="course-media" class="form-label">Course Media</label>
-                  <input type="file" class="form-control w-25" id="course-media" name="course-media" placeholder="Upload Course Media">
-               </div>
+              <div class="mb-3">
+                <label for="courseImage" class="form-label">Course Image</label>
+                <input
+                  type="file"
+                  class="form-control w-25"
+                  id="courseImage"
+                  accept=".png,.jpg"
+                  name="courseImage"
+                  placeholder="Upload Course Image"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="courseMedia" class="form-label">Course Media</label>
+                <input
+                  type="file"
+                  class="form-control w-25"
+                  id="courseMedia"
+                  name="courseMedia"
+                  placeholder="Upload Course Media"
+                />
+              </div>
 
-               <div class="buttons">
-                <button type="submit" class="btn">Create Course</button>
-                <button type="submit" class="btn">Delete</button>
-               </div>
-               
+              <div class="buttons">
+                <button class="btn" id="submitBtn" onclick="addCourse()">Add Course</button>
+                <button class="btn" onclick="deleteAll()">Delete All</button>
+              </div>
             </div>
-                
-
-            
           </div>
         </div>
       </div>
