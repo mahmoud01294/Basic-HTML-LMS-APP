@@ -1,3 +1,5 @@
+let courses = [];
+let currentIndex = -1;
 var header = document.getElementById("Header");
 
 var backToTop = document.getElementById("backToTop");
@@ -20,9 +22,8 @@ backToTop.addEventListener("click", function () {
 });
 
 /* CRUD System */
-let currentIndex = -1;
 let submitBtn = document.getElementById("submitBtn");
-let courses = [];
+
 let courseName = document.getElementById("courseName");
 let courseCategory = document.getElementById("courseCategory");
 let courseLevel = document.getElementById("courseLevel");
@@ -33,7 +34,7 @@ let courseMedia = document.getElementById("courseMedia");
 
 if (localStorage.getItem("ourcourses") != null) {
   courses = JSON.parse(localStorage.getItem("ourcourses"));
-  displayCourses()
+  displayCourses();
 } else {
   courses = [];
 }
@@ -60,8 +61,8 @@ function addCourse() {
   }
 
   localStorage.setItem("ourcourses", JSON.stringify(courses));
-  displayCourses()
-  emptyInp()
+  displayCourses();
+  emptyInp();
 }
 
 function setFormForUpdate(index) {
@@ -77,23 +78,26 @@ function setFormForUpdate(index) {
 }
 
 function displayCourses() {
-  var cartoona = "";
-  for (var i = 0; i < courses.length; i++) {
-    cartoona += `<tr>
+  const cartoona = courses
+    .map((course, index) =>
+      `
+        <tr>
+          <td>${index + 1}</td>
+          <td><img src="${course.img.trim()}" width="30" height="100"/></td>
+          <td>${course.name.trim()}</td>
+          <td>${course.category.trim()}</td>
+          <td>${course.level.trim()}</td>
+          <td>${course.price}</td>
+          <td>
+            <button class="btn btn-danger action-btn" onclick="deleteRow(${index})">Delete</button>
+            <button class="btn btn-warning action-btn" onclick="setFormForUpdate(${index})">update</button>
+            
+          </td>
+        </tr>
+    `.trim()
+    )
+    .join("");
 
-        
-      <td>${i + 1}</td>
-      <td><img src="${courses[i].img}" width="70"/></td>
-      <td>${courses[i].name}</td>
-        <td>${courses[i].category}</td>
-        <td>${courses[i].level}</td>
-        <td>${courses[i].price}</td>
-        <td>
-         <button class="btn btn-danger action-btn" onclick="deleteRow(${i})">Delete</button>
-         <button class="btn btn-warning action-btn" onclick="setFormForUpdate(${i})">Update</button>
-        </td>
-      </tr>`;
-  }
   document.getElementById("tbody").innerHTML = cartoona;
 }
 
